@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "Breathly",
-    "slug": "breathly",
-    "version": "2.1.0",
+    "slug": "breathly-local",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/ios-icon.png",
     "userInterfaceStyle": "automatic",
@@ -11,62 +11,21 @@
       "resizeMode": "cover",
       "backgroundColor": "#F2F2F1"
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true,
-      "icon": "./assets/ios-icon.png",
-      "buildNumber": "17",
-      "bundleIdentifier": "com.mmazzarolo.breathly"
+      "supportsTablet": true
     },
     "android": {
-      "blockedPermissions": [
-        "android.permission.ACCESS_NETWORK_STATE",
-        "android.permission.INTERNET",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.RECORD_AUDIO",
-        "android.permission.SYSTEM_ALERT_WINDOW",
-        "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
-      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/android-adaptive-icon-foreground.png",
         "backgroundColor": "#ffffff"
-      },
-      "icon": "./assets/android-icon.png",
-      "package": "com.mmazzarolo.breathly",
-      "versionCode": 3145747
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "8a2dbb83-3bcc-4d88-9d99-5fd3220273ea"
-      }
-    },
-    "androidStatusBar": {
-      "hidden": true
-    },
     "plugins": [
-      [
-        "expo-build-properties",
-        {
-          "android": {
-            "enableProguardInReleaseBuilds": true
-          }
-        }
-      ],
-      [
-        "expo-navigation-bar",
-        {
-          "position": "absolute",
-          "visibility": "hidden",
-          "behavior": "overlay-swipe",
-          "backgroundColor": "#00000080"
-        }
-      ]
+      "expo-navigation-bar"
     ]
   }
 }
